@@ -1,0 +1,23 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+#    instance-id: ${eureka.instance.ip-address}:${server.port}
+    hostname: order
+    prefer-ip-address: true
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://${MYSQL_HOST:10.10.49.9}/springcloud_shell?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true
+  jpa:
+    show-sql: true
+server:
+  port: 8081
+ribbon:
+  eureka:
+    enabled: true
