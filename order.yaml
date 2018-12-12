@@ -21,3 +21,5 @@ server:
 ribbon:
   eureka:
     enabled: true
+env:
+  dev
