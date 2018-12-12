@@ -22,4 +22,4 @@ ribbon:
   eureka:
     enabled: true
 env:
-  dev
+  test
