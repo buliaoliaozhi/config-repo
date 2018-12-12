@@ -14,4 +14,4 @@ ribbon:
   eureka:
     enabled: true
 env:
-  test123
+  test123456
