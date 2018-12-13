@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.10.49.9:3306/springcloud_shell?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true
+  jpa:
+    show-sql: true
+  thymeleaf:
+    prefix: classpath:/template/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  mvc:
+    static-path-pattern: /**
+server:
+  port: 8083
+ribbon:
+  eureka:
+    enabled: true
