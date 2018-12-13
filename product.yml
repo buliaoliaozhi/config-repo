@@ -25,3 +25,8 @@ server:
 ribbon:
   eureka:
     enabled: true
+env:
+  dev
+girl:
+  name: xiaoqiang
+  age: 18
