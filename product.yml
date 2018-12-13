@@ -8,6 +8,11 @@ spring:
     url: jdbc:mysql://10.10.49.9:3306/springcloud_shell?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true
   jpa:
     show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   thymeleaf:
     prefix: classpath:/template/
     suffix: .html
